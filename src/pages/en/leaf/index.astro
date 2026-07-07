@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AppMockups from "../../../components/AppMockups.astro";
+---
+
+<BaseLayout
+  title="Leaf | Neurinlab"
+  description="Leaf is a lightweight thinking app for capturing ideas quickly and shaping them through projects, mind maps, notes, and tasks."
+  lang="en"
+  current="leaf"
+>
+  <section class="section hero">
+    <div class="section-inner">
+      <img class="app-icon" src="/assets/app/leaf-icon.png" alt="Leaf app icon" />
+      <p class="eyebrow">Leaf</p>
+      <h1 class="hero-title wide">Turn passing thoughts into usable structure.</h1>
+      <p class="hero-copy compact">
+        Leaf is a lightweight thinking app<br />
+        for capturing ideas quickly,<br />
+        organizing them by project,<br />
+        and shaping them through mind maps, notes, and tasks.
+      </p>
+    </div>
+  </section>
+
+  <section class="leaf-band">
+    <div class="section-inner">
+      <div class="feature-intro">
+        <AppMockups
+          labels={[
+            { title: "App screen example", sub: "Ideas" },
+            { title: "App screen example", sub: "Mind map" },
+            { title: "App screen example", sub: "Notes & tasks" }
+          ]}
+          note="Replace with app screenshots"
+        />
+        <div>
+          <p class="meta-label">Core Features</p>
+          <h2 class="feature-title">Capture thoughts early,<br />then expand them into structure.</h2>
+          <p class="feature-copy">
+            A thought does not have to start as a finished sentence.
+            Leaf organizes scattered thoughts into a structure you can return to and use.
+          </p>
+          <p class="flow-copy">Capture, connect, and organize thoughts into practical next steps.</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="info-card">
+          <h2>Projects</h2>
+          <p>Create projects by topic and keep related ideas together with their progress.</p>
+        </article>
+        <article class="info-card">
+          <h2>Mind Maps</h2>
+          <p>Branch out from one idea and see how thoughts relate visually.</p>
+        </article>
+        <article class="info-card">
+          <h2>Notes & Tasks</h2>
+          <p>Add notes and tasks to each mind map node and turn thoughts into next steps.</p>
+        </article>
+      </div>
+
+      <div class="meta-section">
+        <div>
+          <p class="meta-label">Platform</p>
+          <p class="meta-copy">iOS and macOS: preparing for launch<br />Android and Windows: planned for later</p>
+        </div>
+        <div>
+          <p class="meta-label">App Pages</p>
+          <div class="inline-links">
+            <a href="/en/leaf/support/">Leaf Support</a>
+            <a href="/en/leaf/privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

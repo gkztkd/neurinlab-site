@@ -1,0 +1,24 @@
+---
+interface Props {
+  labels?: Array<{ title: string; sub: string }>;
+  note?: string;
+}
+
+const {
+  labels = [
+    { title: "앱 화면 예시", sub: "아이디어 목록" },
+    { title: "앱 화면 예시", sub: "마인드맵" }
+  ],
+  note = "앱 화면 캡처로 교체"
+} = Astro.props;
+---
+
+<div class="app-visual" aria-label={note}>
+  {labels.map((item) => (
+    <div class="app-shot">
+      <span class="app-shot-label">{item.title}</span>
+      <span class="app-shot-sub">{item.sub}</span>
+    </div>
+  ))}
+  <span class="asset-note">{note}</span>
+</div>

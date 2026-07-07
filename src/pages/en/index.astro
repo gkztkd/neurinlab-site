@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AppMockups from "../../components/AppMockups.astro";
+---
+
+<BaseLayout
+  title="Neurinlab"
+  description="Neurinlab explores how we think and write in the age of AI."
+  lang="en"
+  current="home"
+>
+  <section class="section hero">
+    <div class="section-inner">
+      <p class="eyebrow">Slow experiments in thinking and language for the age of AI</p>
+      <h1 class="hero-title">Neurinlab explores how we think and write in the age of AI.</h1>
+      <p class="hero-copy">
+        We use fast tools while looking for ways to think for ourselves,<br />
+        write in our own words, and express ideas with more depth.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="/en/about/">About Neurinlab</a>
+        <a class="button" href="/en/leaf/">Explore Leaf</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="split-section">
+    <div class="section-inner split-grid">
+      <h2 class="section-title">When your own thinking<br />starts to blur</h2>
+      <p class="section-copy">
+        AI helps us write, create, and organize faster. But inside quick results,
+        our own thinking can become less clear. Neurinlab asks how we can use AI
+        without losing our own thoughts and language.
+      </p>
+    </div>
+  </section>
+
+  <section class="leaf-band">
+    <div class="section-inner leaf-grid">
+      <div>
+        <p class="leaf-kicker">Leaf</p>
+        <h2 class="leaf-title">Turn passing thoughts<br />into usable structure.</h2>
+        <p class="leaf-copy">
+          Leaf helps you capture ideas quickly, organize them with projects and mind maps,
+          and shape them into usable structure. It is Neurinlab’s first tool.
+        </p>
+      </div>
+      <AppMockups
+        labels={[
+          { title: "App screen example", sub: "Idea list" },
+          { title: "App screen example", sub: "Mind map" }
+        ]}
+        note="Replace with app screenshots"
+      />
+    </div>
+  </section>
+</BaseLayout>

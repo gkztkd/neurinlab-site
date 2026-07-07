@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.vite/
+*.log
+_tmp_*
+
+# Local planning docs are kept in this workspace, not in the deploy repo.
+site.md
+references.md
+figma.md
+decisions.md
+task.md
+/pages/

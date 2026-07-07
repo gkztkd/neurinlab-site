@@ -1,0 +1,36 @@
+---
+interface Props {
+  lang: "ko" | "en";
+  current: "home" | "about" | "leaf" | "contact";
+}
+
+const { lang, current } = Astro.props;
+const isEn = lang === "en";
+const prefix = isEn ? "/en" : "";
+const nav = [
+  { key: "home", label: "Home", href: `${prefix}/` },
+  { key: "about", label: "About", href: `${prefix}/about/` },
+  { key: "leaf", label: "Leaf", href: `${prefix}/leaf/` },
+  { key: "contact", label: "Contact Us", href: `${prefix}/contact/` }
+];
+const note = isEn
+  ? "Neurinlab explores ways to keep thinking clear in the age of fast tools."
+  : "느린랩은 빠른 도구의 시대에 생각을 잃지 않는 방식을 정리합니다.";
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-note">{note}</p>
+    <nav aria-label={isEn ? "Footer navigation" : "하단 메뉴"}>
+      <ul class="footer-nav">
+        {nav.map((item) => (
+          <li>
+            <a class="footer-link" href={item.href} aria-current={current === item.key ? "page" : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</footer>

@@ -1,0 +1,39 @@
+---
+interface Props {
+  lang: "ko" | "en";
+  current: "home" | "about" | "leaf" | "contact";
+}
+
+const { lang, current } = Astro.props;
+const isEn = lang === "en";
+const prefix = isEn ? "/en" : "";
+const logo = isEn ? "/assets/logo/neurinlab-logo-en.svg" : "/assets/logo/neurinlab-logo-ko.svg";
+const nav = [
+  { key: "home", label: "Home", href: `${prefix}/` },
+  { key: "about", label: "About", href: `${prefix}/about/` },
+  { key: "leaf", label: "Leaf", href: `${prefix}/leaf/` },
+  { key: "contact", label: "Contact Us", href: `${prefix}/contact/` }
+];
+const switchHref = isEn ? "/" : "/en/";
+const switchLabel = isEn ? "KR" : "EN";
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand-logo" href={prefix || "/"} aria-label={isEn ? "Neurinlab home" : "느린랩 홈"}>
+      <img src={logo} alt={isEn ? "Neurinlab" : "느린랩"} />
+    </a>
+    <nav class="nav-wrap" aria-label={isEn ? "Primary navigation" : "주요 메뉴"}>
+      <ul class="nav-list">
+        {nav.map((item) => (
+          <li>
+            <a class="nav-link" href={item.href} aria-current={current === item.key ? "page" : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a class="language-link" href={switchHref}>{switchLabel}</a>
+    </nav>
+  </div>
+</header>

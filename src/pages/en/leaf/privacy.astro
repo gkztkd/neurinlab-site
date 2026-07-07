@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import PolicySection from "../../../components/PolicySection.astro";
+---
+
+<BaseLayout
+  title="Leaf Privacy Policy | Neurinlab"
+  description="Leaf Privacy Policy covering collected information, use, third-party services, data deletion, and contact."
+  lang="en"
+  current="leaf"
+>
+  <section class="section hero">
+    <div class="section-inner">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1 class="hero-title wide">Leaf Privacy Policy</h1>
+      <p class="hero-copy compact">Last updated: June 17, 2026</p>
+    </div>
+  </section>
+
+  <div class="policy-wrap">
+    <PolicySection title="Overview">
+      <p>Leaf is an app for capturing ideas, organizing projects, and creating mind maps. This page explains what information Leaf collects and how it is used.</p>
+    </PolicySection>
+    <PolicySection title="Information We Collect">
+      <ul>
+        <li>The email address used to create an account or log in</li>
+        <li>User account identifiers required for authentication and sync</li>
+        <li>Projects, ideas, and mind map nodes created in Leaf</li>
+        <li>Support inquiry content sent by email</li>
+      </ul>
+    </PolicySection>
+    <PolicySection title="How We Use Information">
+      <ul>
+        <li>Provide account login and email verification</li>
+        <li>Sync and back up Leaf data across devices</li>
+        <li>Restore data when the user logs in on another device</li>
+        <li>Respond to customer support inquiries</li>
+        <li>Maintain app stability and security</li>
+      </ul>
+    </PolicySection>
+    <PolicySection title="Third-Party Services">
+      <p>Leaf uses Supabase for authentication, database storage, and sync. Supabase processes account and app data only as needed to provide those features.</p>
+    </PolicySection>
+    <PolicySection title="Tracking and Advertising">
+      <p>Leaf does not use user data for third-party advertising or tracking.</p>
+    </PolicySection>
+    <PolicySection title="Data Deletion">
+      <p>
+        To request deletion of account data, contact <a href="mailto:gkztkd@gmail.com">gkztkd@gmail.com</a>.<br />
+        If account deletion is available in the app, you can also delete your account directly in Settings.
+      </p>
+    </PolicySection>
+    <PolicySection title="Contact">
+      <p>For privacy-related questions, contact <a href="mailto:gkztkd@gmail.com">gkztkd@gmail.com</a>.</p>
+    </PolicySection>
+    <PolicySection title="Related Pages">
+      <p>
+        You can find Leaf Support at <a href="/en/leaf/support/">/en/leaf/support</a>.<br />
+        The Leaf overview is available at <a href="/en/leaf/">/en/leaf</a>.
+      </p>
+    </PolicySection>
+  </div>
+</BaseLayout>
