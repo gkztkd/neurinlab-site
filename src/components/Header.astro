@@ -1,4 +1,4 @@
----
+﻿---
 interface Props {
   lang: "ko" | "en";
   current: "home" | "about" | "leaf" | "contact";
@@ -23,7 +23,14 @@ const switchLabel = isEn ? "KR" : "EN";
     <a class="brand-logo" href={prefix || "/"} aria-label={isEn ? "Neurinlab home" : "느린랩 홈"}>
       <img src={logo} alt={isEn ? "Neurinlab" : "느린랩"} />
     </a>
-    <nav class="nav-wrap" aria-label={isEn ? "Primary navigation" : "주요 메뉴"}>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+      <span class="menu-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+      </span>
+      <span>Menu</span>
+    </button>
+    <nav id="primary-nav" class="nav-wrap" aria-label={isEn ? "Primary navigation" : "주요 메뉴"} data-primary-nav>
       <ul class="nav-list">
         {nav.map((item) => (
           <li>
@@ -37,3 +44,28 @@ const switchLabel = isEn ? "KR" : "EN";
     </nav>
   </div>
 </header>
+
+<script is:inline>
+  const header = document.currentScript?.closest(".site-header");
+  const toggle = header?.querySelector("[data-menu-toggle]");
+  const nav = header?.querySelector("[data-primary-nav]");
+
+  const closeMenu = () => {
+    nav?.classList.remove("is-open");
+    toggle?.setAttribute("aria-expanded", "false");
+  };
+
+  toggle?.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    nav?.classList.toggle("is-open", !isOpen);
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+  });
+
+  nav?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (header && !header.contains(event.target)) closeMenu();
+  });
+</script>
