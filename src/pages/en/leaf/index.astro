@@ -9,9 +9,8 @@ import AppMockups from "../../../components/AppMockups.astro";
   lang="en"
   current="leaf"
 >
-  <section class="section hero">
+  <section class="section hero leaf-hero">
     <div class="section-inner">
-      <img class="app-icon" src="/assets/app/leaf-icon.png" alt="Leaf app icon" />
       <p class="eyebrow">Leaf</p>
       <h1 class="hero-title wide">Turn passing thoughts into usable structure.</h1>
       <p class="hero-copy compact">
@@ -20,25 +19,26 @@ import AppMockups from "../../../components/AppMockups.astro";
         organizing them by project,<br />
         and shaping them through mind maps, notes, and tasks.
       </p>
+      <img class="app-icon" src="/assets/app/leaf-icon.png" alt="Leaf app icon" />
     </div>
   </section>
 
-  <section class="leaf-band">
+  <section class="leaf-band leaf-detail-band">
     <div class="section-inner">
       <div class="feature-intro">
         <AppMockups
           labels={[
-            { title: "App screen example", sub: "Ideas" },
-            { title: "App screen example", sub: "Mind map" },
-            { title: "App screen example", sub: "Notes & tasks" }
+            { title: "Screen example", sub: "Ideas" },
+            { title: "Screen example", sub: "Mind map" },
+            { title: "Screen example", sub: "Notes & tasks" }
           ]}
           note="Replace with app screenshots"
         />
         <div>
           <p class="meta-label">Core Features</p>
-          <h2 class="feature-title">Capture thoughts early,<br />then expand them into structure.</h2>
+          <h2 class="feature-title">Capture thoughts before they get too complex,<br />and expand them when you need more structure.</h2>
           <p class="feature-copy">
-            A thought does not have to start as a finished sentence.
+            It does not have to start as a finished sentence.
             Leaf organizes scattered thoughts into a structure you can return to and use.
           </p>
           <p class="flow-copy">Capture, connect, and organize thoughts into practical next steps.</p>

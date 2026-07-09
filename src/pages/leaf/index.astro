@@ -8,62 +8,63 @@ import AppMockups from "../../components/AppMockups.astro";
   description="Leaf는 떠오른 생각을 빠르게 기록하고 프로젝트, 마인드맵, 노트와 할 일로 정리하는 느린랩의 첫 번째 도구입니다."
   current="leaf"
 >
-  <section class="section hero">
+  <section class="section hero leaf-hero">
     <div class="section-inner">
-      <img class="app-icon" src="/assets/app/leaf-icon.png" alt="Leaf 앱 아이콘" />
       <p class="eyebrow">Leaf</p>
       <h1 class="hero-title wide">떠오른 생각을 실행 가능한 구조로.</h1>
       <p class="hero-copy compact">
-        Leaf는 떠오른 아이디어를 빠르게 기록하고,<br />
-        프로젝트별로 정리하고, 마인드맵과 노트, 할 일로<br />
-        구체화하는 가벼운 생각 정리 앱입니다.
+        Leaf는 떠오른 생각을 빠르게 기록하고,<br />
+        프로젝트별로 정리한 뒤,<br />
+        마인드맵과 노트, 할 일로 구체화하는<br />
+        생각 정리 앱입니다.
       </p>
+      <img class="app-icon" src="/assets/app/leaf-icon.png" alt="Leaf 앱 아이콘" />
     </div>
   </section>
 
-  <section class="leaf-band">
+  <section class="leaf-band leaf-detail-band">
     <div class="section-inner">
       <div class="feature-intro">
         <AppMockups
           labels={[
-            { title: "앱 화면 예시", sub: "아이디어" },
+            { title: "앱 화면 예시", sub: "아이디어 목록" },
             { title: "앱 화면 예시", sub: "마인드맵" },
             { title: "앱 화면 예시", sub: "노트와 할 일" }
           ]}
         />
         <div>
           <p class="meta-label">핵심 기능</p>
-          <h2 class="feature-title">복잡해지기 전의 생각을 붙잡고,<br />필요한 순간 구조로 펼칩니다.</h2>
+          <h2 class="feature-title">복잡해지기 전의 생각을 붙잡고,<br />필요한 순간 더 큰 구조로 펼칩니다.</h2>
           <p class="feature-copy">
-            생각은 처음부터 완성된 문장으로 시작하지 않아도 됩니다.
-            Leaf는 흩어진 생각을 다시 돌아와 사용할 수 있는 구조로 정리합니다.
+            처음부터 완성된 문장이 아니어도 괜찮습니다.
+            Leaf는 흩어진 생각을 다시 꺼내 쓸 수 있는 구조로 정리합니다.
           </p>
-          <p class="flow-copy">기록하고, 연결하고, 실행 가능한 다음 단계로 정리합니다.</p>
+          <p class="flow-copy">생각을 붙잡고, 연결하고, 실행 단위로 정리합니다.</p>
         </div>
       </div>
 
       <div class="card-grid">
         <article class="info-card">
           <h2>프로젝트</h2>
-          <p>주제별로 프로젝트를 만들고, 관련된 아이디어와 진행 상태를 함께 모읍니다.</p>
+          <p>주제별 프로젝트를 만들고, 진행 상태와 함께 아이디어를 한곳에 정리합니다.</p>
         </article>
         <article class="info-card">
           <h2>마인드맵</h2>
-          <p>하나의 생각에서 가지를 뻗어 생각 사이의 관계를 시각적으로 확인합니다.</p>
+          <p>하나의 아이디어에서 가지를 뻗어 생각의 관계를 시각적으로 확인합니다.</p>
         </article>
         <article class="info-card">
           <h2>노트와 할 일</h2>
-          <p>각 마인드맵 노드에 노트와 할 일을 더해 생각을 다음 행동으로 옮깁니다.</p>
+          <p>마인드맵 노드마다 메모와 할 일을 추가해 생각을 실행 가능한 단위로 정리합니다.</p>
         </article>
       </div>
 
       <div class="meta-section">
         <div>
           <p class="meta-label">플랫폼</p>
-          <p class="meta-copy">iOS / macOS 출시 준비중<br />Android / Windows 추후 지원 예정</p>
+          <p class="meta-copy">iOS / macOS 출시 준비 중<br />Android / Windows 추후 지원 예정</p>
         </div>
         <div>
-          <p class="meta-label">앱 페이지</p>
+          <p class="meta-label">앱 안내</p>
           <div class="inline-links">
             <a href="/leaf/support/">Leaf 지원</a>
             <a href="/leaf/privacy/">개인정보 처리방침</a>

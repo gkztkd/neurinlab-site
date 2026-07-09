@@ -28,7 +28,7 @@ const switchLabel = isEn ? "KR" : "EN";
         <span></span>
         <span></span>
       </span>
-      <span>Menu</span>
+      <span data-menu-label>Menu</span>
     </button>
     <nav id="primary-nav" class="nav-wrap" aria-label={isEn ? "Primary navigation" : "주요 메뉴"} data-primary-nav>
       <ul class="nav-list">
@@ -46,19 +46,24 @@ const switchLabel = isEn ? "KR" : "EN";
 </header>
 
 <script is:inline>
-  const header = document.currentScript?.closest(".site-header");
+  const header = document.querySelector(".site-header");
   const toggle = header?.querySelector("[data-menu-toggle]");
+  const label = header?.querySelector("[data-menu-label]");
   const nav = header?.querySelector("[data-primary-nav]");
 
   const closeMenu = () => {
     nav?.classList.remove("is-open");
     toggle?.setAttribute("aria-expanded", "false");
+    document.documentElement.classList.remove("menu-open");
+    if (label) label.textContent = "Menu";
   };
 
   toggle?.addEventListener("click", () => {
     const isOpen = toggle.getAttribute("aria-expanded") === "true";
     nav?.classList.toggle("is-open", !isOpen);
     toggle.setAttribute("aria-expanded", String(!isOpen));
+    document.documentElement.classList.toggle("menu-open", !isOpen);
+    if (label) label.textContent = isOpen ? "Menu" : "Close";
   });
 
   nav?.querySelectorAll("a").forEach((link) => {
