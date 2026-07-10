@@ -1,67 +1,79 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import AppMockups from "../../components/AppMockups.astro";
 ---
 
 <BaseLayout
   title="Neurinlab"
-  description="Neurinlab explores how we think and write in the age of AI."
+  description="So we don't lose our own thinking in the age of AI."
   lang="en"
   current="home"
 >
-  <section class="section hero">
-    <div class="section-inner">
-      <p class="eyebrow">Slow experiments in thinking and language for the age of AI</p>
-      <h1 class="hero-title">
-        <span class="desktop-title">
-          <span class="title-line">Neurinlab explores how we think and write</span>
-          <span class="title-line">in the age of AI.</span>
-        </span>
-        <span class="mobile-title">
-          <span class="title-line">Neurinlab explores</span>
-          <span class="title-line">how we think and write</span>
-          <span class="title-line">in the age of AI.</span>
-        </span>
-      </h1>
-      <p class="hero-copy">
-        We use fast tools while looking for ways to think for ourselves,<br />
-        write in our own words, and express ideas with more depth.
-      </p>
-      <div class="actions">
-        <a class="button primary" href="/en/about/">About Neurinlab</a>
-        <a class="button" href="/en/leaf/">Explore Leaf</a>
+  <section class="home-hero">
+    <div class="section-inner home-hero-grid">
+      <div class="home-hero-copy">
+        <p class="eyebrow home-eyebrow">Slow experiments in thinking and language for the age of AI</p>
+        <h1 class="home-title home-title-en">
+          <span>So we don't lose</span>
+          <span>our own thinking</span>
+          <span>in the age of AI.</span>
+        </h1>
+        <p class="home-copy">
+          <span class="desktop-copy">
+            We use fast tools while looking for ways to think for ourselves,<br />
+            write in our own words, and express ideas with greater depth.
+          </span>
+          <span class="mobile-copy">
+            We use fast tools while looking for ways<br />
+            to think for ourselves, write in our own words,<br />
+            and express ideas with greater depth.
+          </span>
+        </p>
+        <div class="actions home-actions">
+          <a class="button primary" href="/en/about/">About Neurinlab</a>
+          <a class="button" href="/en/leaf/">Explore Leaf</a>
+        </div>
+        <p class="home-lower-note home-lower-note-desktop">Slow questions become practical tools.</p>
       </div>
+
+      <div class="thinking-field" aria-hidden="true">
+        <span class="field-line field-line-v field-line-v-1"></span>
+        <span class="field-line field-line-v field-line-v-2"></span>
+        <span class="field-line field-line-h field-line-h-1"></span>
+        <span class="field-line field-line-h field-line-h-2"></span>
+        <span class="field-line field-line-h field-line-h-3"></span>
+
+        <div class="field-node field-node-thought">
+          <strong>Hold the thought</strong>
+          <span>Before quick answers</span>
+        </div>
+        <div class="field-node field-node-language">
+          <strong>Put it in words</strong>
+          <span>In your own voice</span>
+        </div>
+        <div class="field-node field-node-structure">
+          <strong>Shape the structure</strong>
+          <span>Into usable form</span>
+        </div>
+        <div class="field-node field-node-leaf field-node-active">
+          <strong>Continue in Leaf</strong>
+          <span>Thinking tool</span>
+        </div>
+        <span class="field-caption">THINKING FIELD</span>
+      </div>
+      <p class="home-lower-note home-lower-note-mobile">Slow questions become practical tools.</p>
     </div>
   </section>
 
-  <section class="split-section">
-    <div class="section-inner split-grid">
-      <h2 class="section-title">When your own thinking<br />starts to blur</h2>
-      <p class="section-copy">
-        AI helps us write, create, and organize faster. But inside quick results,
-        our own thinking can become less clear. Neurinlab asks how we can use AI
+  <section class="home-problem">
+    <div class="section-inner home-problem-grid">
+      <h2 class="home-section-title">When your own thinking<br />starts to blur</h2>
+      <p class="home-section-copy">
+        AI helps us write, create, and organize faster.<br />
+        But when results arrive quickly,<br class="mobile-only" />
+        our own thinking can become less clear.<br />
+        Neurinlab asks how to use AI<br class="mobile-only" />
         without losing our own thoughts and language.
       </p>
-    </div>
-  </section>
-
-  <section class="leaf-band">
-    <div class="section-inner leaf-grid">
-      <div>
-        <p class="leaf-kicker">Leaf</p>
-        <h2 class="leaf-title">Turn passing thoughts<br />into usable structure.</h2>
-        <p class="leaf-copy">
-          Leaf helps you capture ideas quickly, organize them with projects and mind maps,
-          and shape them into usable structure. It is Neurinlab’s first tool.
-        </p>
-      </div>
-      <AppMockups
-        labels={[
-          { title: "App screen example", sub: "Idea list" },
-          { title: "App screen example", sub: "Mind map" }
-        ]}
-        note="Replace with app screenshots"
-      />
     </div>
   </section>
 </BaseLayout>

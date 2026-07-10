@@ -1,61 +1,81 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import AppMockups from "../components/AppMockups.astro";
 ---
 
 <BaseLayout
   title="느린랩"
-  description="느린랩은 AI 시대에 자기 생각과 자기 언어를 잃지 않기 위한 방법을 탐구하는 브랜드입니다."
+  description="느린랩은 AI 시대에 우리의 생각을 잃지 않기 위한 방법을 탐구합니다."
   current="home"
 >
-  <section class="section hero">
-    <div class="section-inner">
-      <p class="eyebrow">AI 시대의 생각과 언어를 위한 느린 실험</p>
-      <h1 class="hero-title">
-        <span class="desktop-title">
-          <span class="title-line">느린랩은 AI 시대에 자기 생각과 자기 언어를</span>
-          <span class="title-line">잃지 않기 위한 방법을 탐구하는 브랜드입니다.</span>
-        </span>
-        <span class="mobile-title">
-          <span class="title-line">느린랩은 AI 시대에</span>
-          <span class="title-line">자기 생각과 자기 언어를</span>
-          <span class="title-line">잃지 않기 위한 방법을</span>
-          <span class="title-line">탐구하는 브랜드입니다.</span>
-        </span>
-      </h1>
-      <p class="hero-copy">
-        빠른 도구를 쓰면서도 스스로 생각하고,<br />
-        자기 언어로 정리하고, 더 깊게 표현하는 방법을 찾습니다.
-      </p>
-      <div class="actions">
-        <a class="button primary" href="/about/">느린랩 소개</a>
-        <a class="button" href="/leaf/">Leaf 살펴보기</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="split-section">
-    <div class="section-inner split-grid">
-      <h2 class="section-title">빠른 결과물 안에서<br />내 생각이 흐려질 때</h2>
-      <p class="section-copy">
-        AI는 더 빨리 쓰고, 더 빨리 만들고, 더 빨리 정리하게 해줍니다.
-        하지만 빠른 결과물 안에서 내 생각이 흐려질 때가 있습니다.
-        느린랩은 AI를 쓰면서도 자기 생각과 자기 언어를 잃지 않는 방법을 묻습니다.
-      </p>
-    </div>
-  </section>
-
-  <section class="leaf-band">
-    <div class="section-inner leaf-grid">
-      <div>
-        <p class="leaf-kicker">Leaf</p>
-        <h2 class="leaf-title">떠오른 생각을<br />실행 가능한 구조로.</h2>
-        <p class="leaf-copy">
-          Leaf는 떠오른 생각을 빠르게 기록하고, 프로젝트와 마인드맵으로 정리해
-          실행으로 옮길 수 있게 돕는 느린랩의 첫 번째 도구입니다.
+  <section class="home-hero">
+    <div class="section-inner home-hero-grid">
+      <div class="home-hero-copy">
+        <p class="eyebrow home-eyebrow">AI 시대의 생각과 언어를 위한 느린 실험</p>
+        <h1 class="home-title">
+          <span>AI 시대에</span>
+          <span>우리의 생각을</span>
+          <span>잃지 않기 위해</span>
+        </h1>
+        <p class="home-copy">
+          <span class="desktop-copy">
+            빠른 도구를 쓰면서도 스스로 생각하고,<br />
+            자기 언어로 정리하고, 더 깊게 표현하는 방법을 찾습니다.
+          </span>
+          <span class="mobile-copy">
+            빠른 도구를 쓰면서도<br />
+            스스로 생각하고, 자기 언어로 정리하고,<br />
+            더 깊게 표현하는 방법을 찾습니다.
+          </span>
         </p>
+        <div class="actions home-actions">
+          <a class="button primary" href="/about/">느린랩 소개</a>
+          <a class="button" href="/leaf/">Leaf 살펴보기</a>
+        </div>
+        <p class="home-lower-note home-lower-note-desktop">느린 질문에서 시작해, 실제 도구로 이어집니다.</p>
       </div>
-      <AppMockups />
+
+      <div class="thinking-field" aria-hidden="true">
+        <span class="field-line field-line-v field-line-v-1"></span>
+        <span class="field-line field-line-v field-line-v-2"></span>
+        <span class="field-line field-line-h field-line-h-1"></span>
+        <span class="field-line field-line-h field-line-h-2"></span>
+        <span class="field-line field-line-h field-line-h-3"></span>
+
+        <div class="field-node field-node-thought">
+          <strong>생각을 붙잡기</strong>
+          <span>빠른 답 앞에서</span>
+        </div>
+        <div class="field-node field-node-language">
+          <strong>언어로 정리하기</strong>
+          <span>내 말로 다시</span>
+        </div>
+        <div class="field-node field-node-structure">
+          <strong>구조로 옮기기</strong>
+          <span>실행 가능한 형태로</span>
+        </div>
+        <div class="field-node field-node-leaf field-node-active">
+          <strong>Leaf로 이어지기</strong>
+          <span>생각 정리 도구</span>
+        </div>
+        <span class="field-caption">THINKING FIELD</span>
+      </div>
+      <p class="home-lower-note home-lower-note-mobile">느린 질문에서 시작해, 실제 도구로 이어집니다.</p>
+    </div>
+  </section>
+
+  <section class="home-problem">
+    <div class="section-inner home-problem-grid">
+      <h2 class="home-section-title">빠른 결과물 안에서<br />내 생각이 흐려질 때</h2>
+      <p class="home-section-copy">
+        AI는 더 빨리 쓰고, 더 빨리 만들고,<br class="mobile-only" />
+        더 빨리 정리하게 해줍니다.<br />
+        하지만 빠른 결과물 안에서<br class="mobile-only" />
+        내 생각이 흐려질 때가 있습니다.<br />
+        느린랩은 AI를 쓰면서도 자기 생각과<br class="mobile-only" />
+        자기 언어를<br class="desktop-only" /> 잃지 않는 방법을 묻습니다.
+      </p>
     </div>
   </section>
 </BaseLayout>
+
+
