@@ -23,13 +23,18 @@ const switchLabel = isEn ? "KR" : "EN";
     <a class="brand-logo" href={prefix || "/"} aria-label={isEn ? "Neurinlab home" : "느린랩 홈"}>
       <img src={logo} alt={isEn ? "Neurinlab" : "느린랩"} />
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
-      <span class="menu-icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-      </span>
-      <span data-menu-label>Menu</span>
-    </button>
+    <div class="header-controls">
+      <a class="mobile-language-link" href={switchHref} aria-label={isEn ? "한국어로 보기" : "View in English"}>
+        {switchLabel}
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
+        <span class="menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+        <span data-menu-label>Menu</span>
+      </button>
+    </div>
     <nav id="primary-nav" class="nav-wrap" aria-label={isEn ? "Primary navigation" : "주요 메뉴"} data-primary-nav>
       <ul class="nav-list">
         {nav.map((item) => (

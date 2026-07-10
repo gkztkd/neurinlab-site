@@ -135,6 +135,11 @@ img {
   display: none;
 }
 
+.header-controls,
+.mobile-language-link {
+  display: none;
+}
+
 .language-link {
   padding-inline-start: 28px;
   border-left: 1px solid var(--border);
@@ -1192,10 +1197,30 @@ img {
     height: 24px;
   }
 
-  .menu-toggle {
-    min-height: 38px;
+  .header-controls {
     position: relative;
     z-index: 40;
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+  }
+
+  .mobile-language-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .mobile-language-link:hover {
+    color: var(--text);
+  }
+
+  .menu-toggle {
+    min-height: 38px;
     display: inline-flex;
     align-items: center;
     border: 0;
