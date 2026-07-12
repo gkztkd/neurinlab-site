@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.neurinlab.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/about/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/contact/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/leaf/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/leaf/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/leaf/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/leaf/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/leaf/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/leaf/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/leaf/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/leaf/privacy/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/leaf/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/leaf/support/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/leaf/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/leaf/support/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/en/about/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/about/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/contact/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/en/leaf/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/leaf/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/leaf/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/leaf/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/en/leaf/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/leaf/privacy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/leaf/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/leaf/privacy/" />
+  </url>
+  <url>
+    <loc>https://www.neurinlab.com/en/leaf/support/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://www.neurinlab.com/leaf/support/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurinlab.com/en/leaf/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurinlab.com/leaf/support/" />
+  </url>
+</urlset>
