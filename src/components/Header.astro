@@ -14,7 +14,10 @@ const nav = [
   { key: "leaf", label: "Tools", href: `${prefix}/leaf/` },
   { key: "contact", label: "Contact Us", href: `${prefix}/contact/` }
 ];
-const switchHref = isEn ? "/" : "/en/";
+const currentPath = Astro.url.pathname;
+const switchHref = isEn
+  ? currentPath.replace(/^\/en(?=\/|$)/, "") || "/"
+  : `/en${currentPath}`;
 const switchLabel = isEn ? "KR" : "EN";
 ---
 
