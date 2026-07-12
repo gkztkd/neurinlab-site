@@ -596,6 +596,10 @@ img {
   white-space: nowrap;
 }
 
+.home-title-mobile {
+  display: none !important;
+}
+
 .home-title-en {
   font-size: 64px;
   line-height: 1.22;
@@ -1008,6 +1012,14 @@ img {
   .home-title-en {
     font-size: 42px;
     line-height: 1.24;
+  }
+
+  .home-title-desktop {
+    display: none !important;
+  }
+
+  .home-title-mobile {
+    display: block !important;
   }
 
   .home-copy {
