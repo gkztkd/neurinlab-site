@@ -3,8 +3,76 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PolicySection from "../../../components/PolicySection.astro";
 ---
 
-<BaseLayout title="Leaf Privacy Policy | Neurinlab" description="Leaf Privacy Policy, including information collection, use, third-party services, data deletion, and contact." lang="en" current="leaf">
-  <section class="editorial-hero privacy-hero"><div class="wide-inner"><p class="editorial-kicker">Privacy Policy</p><h1 class="editorial-title">Leaf Privacy Policy</h1><p class="editorial-copy">Status: English update pending</p></div></section>
-  <section class="policy-warning"><div class="policy-inner"><strong>Review in progress</strong><p>The Korean draft contains the latest operational details. This English version will be aligned after the remaining retention and service-provider details are confirmed.</p></div></section>
-  <div class="policy-wrap"><p class="policy-intro">This page provides a provisional English overview of how Leaf handles personal information.</p><PolicySection title="Overview" open><p>Leaf helps you capture ideas, organize projects, and create mind maps. This page explains what information Leaf collects and how that information is used.</p></PolicySection><PolicySection title="Information We Collect"><ul><li>The email address used to create an account or log in</li><li>User account identifiers required for authentication and sync</li><li>Projects, ideas, mind maps, notes, and tasks created in Leaf</li><li>Subscription and transaction identifiers used to verify Leaf Plus</li><li>Support inquiry content sent by email</li></ul></PolicySection><PolicySection title="How We Use Information"><ul><li>Provide account login and email verification</li><li>Sync, back up, and restore Leaf data across devices</li><li>Verify subscriptions and restore purchases</li><li>Respond to support inquiries and maintain app security</li></ul></PolicySection><PolicySection title="Third-Party Services"><p>Leaf uses Supabase for authentication, database storage, and sync. Apple provides in-app purchases, subscription management, cancellations, and refunds.</p></PolicySection><PolicySection title="Data Deletion"><p>You can delete your account from Leaf settings after confirming your password. Deleting your Leaf account or the app does not automatically cancel an Apple subscription.</p></PolicySection><PolicySection title="Contact"><p>For privacy-related questions, contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.</p></PolicySection></div>
+<BaseLayout title="Leaf Privacy Policy | Neurinlab" description="How Leaf processes, retains, and deletes personal information." lang="en" current="leaf">
+  <section class="editorial-hero privacy-hero">
+    <div class="wide-inner">
+      <p class="editorial-kicker">Privacy Policy</p>
+      <h1 class="editorial-title">Leaf Privacy Policy</h1>
+      <p class="editorial-copy">Effective September 9, 2026</p>
+    </div>
+  </section>
+
+  <div class="policy-wrap">
+    <p class="policy-intro">Neurinlab (the “Operator”) values the privacy of Leaf users. This policy explains what personal information Leaf processes, why it is used, how long it is retained, how it is deleted, and how to contact us.</p>
+
+    <PolicySection title="1. Information We Process and Why" open>
+      <h3>Account and user data</h3>
+      <p>We process your email address and account identifier to create and authenticate your Leaf account. If you use sync, projects, ideas, mind maps, notes, tasks, and related change history are processed on our servers.</p>
+      <h3>Subscription and purchase information</h3>
+      <p>To verify Leaf Plus access, restore purchases, and resolve errors, we use product and transaction identifiers, account-linking information, subscription status, and related processing timestamps. Payments are handled through Apple’s in-app purchase system. Neurinlab does not directly collect payment details such as card numbers.</p>
+      <h3>Email and customer support</h3>
+      <p>Authentication emails use your email address and message content such as authentication or password-reset links. Customer support uses your email address, inquiry, and any attachments you provide.</p>
+    </PolicySection>
+
+    <PolicySection title="2. External Services">
+      <h3>Supabase</h3>
+      <p>Used for account authentication, server storage, sync, and subscription entitlement verification. The primary database is hosted in the Seoul region.</p>
+      <h3>Apple iCloud Mail</h3>
+      <p>Used to send authentication and password-reset emails and to receive and reply to customer support messages.</p>
+      <h3>Apple In-App Purchase</h3>
+      <p>Used for subscription payments, purchase restoration, renewals, cancellations, and refunds.</p>
+    </PolicySection>
+
+    <PolicySection title="3. Retention and Deletion">
+      <h3>Account-linked data</h3>
+      <p>When account deletion is completed successfully, we delete user-created server data, sync history, Leaf entitlements, and account-specific recovery copies linked to that account.</p>
+      <h3>Apple subscription notification records</h3>
+      <p>These records are retained for 90 days from receipt and cleaned up daily. They may contain transaction identifiers and are managed separately from account deletion. The same retention period applies to Apple notifications received after account deletion.</p>
+      <h3>Purchase error diagnostics</h3>
+      <p>These records are retained for 30 days and cleaned up daily. They contain only the feature category, error category, numeric response code, and timestamp. Passwords, authentication tokens, user-created content, and original receipts are not stored in these diagnostic records.</p>
+      <h3>Temporary database recovery copies</h3>
+      <p>Temporary recovery copies are retained for seven days from creation and cleaned up daily.</p>
+      <h3>Support messages, replies, and attachments</h3>
+      <p>These are reviewed monthly and deleted from the trash one year after the inquiry is resolved. Monthly review may result in up to one additional month of retention.</p>
+      <h3>Sync records</h3>
+      <p>Sync request and change history and conflict records are retained for 90 days. Device sync records are retained for one year after the device’s last activity. Cleanup occurs during relevant sync or conflict processing, so records may remain until the next such event. Sync records linked to the account are deleted when the account is deleted.</p>
+      <p>Items cleaned up daily may remain for up to one additional day after their retention period. These periods apply to records controlled by Neurinlab and do not mean that Apple purchase records, files exported by users, or copies on other offline devices are deleted immediately.</p>
+    </PolicySection>
+
+    <PolicySection title="4. Account Deletion and Subscription Management">
+      <p>You can delete your account in Leaf’s account settings after confirming your password. Once deletion is completed, the authentication account, server data, sync history, and Leaf entitlements linked to the account are deleted.</p>
+      <p>Leaf also clears local data and cache on the device used to delete the account. This does not immediately remove exported files or data on other devices that remain offline.</p>
+      <p>Deleting your Leaf account or the app does not automatically cancel or refund an Apple subscription. To stop renewal, cancel the subscription separately in your Apple account’s subscription settings.</p>
+      <p>If you need help deleting your account, contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.</p>
+    </PolicySection>
+
+    <PolicySection title="5. Your Rights and How to Exercise Them">
+      <p>You may request access to, correction or deletion of, or restriction of processing for your personal information. Use the data-management or account-deletion features in Leaf, or contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.</p>
+      <p>After confirming your identity and the scope of your request, we will process it under applicable law and inform you of the outcome. If applicable law prevents us from fulfilling all or part of a request, we will explain why.</p>
+    </PolicySection>
+
+    <PolicySection title="6. Security Measures and Advertising Tracking">
+      <p>Leaf restricts access to server data to authenticated accounts and applies account-level access controls. When an account is deleted, the server verifies the current session and recent password authentication and removes login sessions linked to the account.</p>
+      <p>Leaf does not use user data for third-party advertising or tracking.</p>
+    </PolicySection>
+
+    <PolicySection title="7. Privacy Inquiries">
+      <p>Send privacy questions and requests to exercise your rights through the following channels.</p>
+      <ul><li>Operator: Neurinlab</li><li>Email: <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a></li><li>Support: <a href="/en/leaf/support/">https://www.neurinlab.com/en/leaf/support/</a></li></ul>
+    </PolicySection>
+
+    <PolicySection title="8. Changes to This Policy">
+      <p>If we update this policy because our processing practices or applicable laws change, we will publish the revised terms and effective date on this page. Changes that require additional notice or consent will follow the procedures required by applicable law.</p>
+    </PolicySection>
+  </div>
 </BaseLayout>
