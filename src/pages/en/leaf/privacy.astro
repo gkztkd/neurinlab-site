@@ -25,12 +25,7 @@ import PolicySection from "../../../components/PolicySection.astro";
     </PolicySection>
 
     <PolicySection title="2. External Services">
-      <h3>Supabase</h3>
-      <p>Used for account authentication, server storage, sync, and subscription entitlement verification. The primary database is hosted in the Seoul region.</p>
-      <h3>Apple iCloud Mail</h3>
-      <p>Used to send authentication and password-reset emails and to receive and reply to customer support messages.</p>
-      <h3>Apple In-App Purchase</h3>
-      <p>Used for subscription payments, purchase restoration, renewals, cancellations, and refunds.</p>
+      <p>Leaf uses Supabase for account authentication, data storage and synchronization, and subscription entitlement verification. Its primary database is located in the Seoul, Republic of Korea region. Apple iCloud Mail is used to send authentication and password-reset emails and to handle customer inquiries. Subscription payments are processed through Apple’s in-app purchase system.</p>
     </PolicySection>
 
     <PolicySection title="3. Retention and Deletion">
@@ -46,7 +41,8 @@ import PolicySection from "../../../components/PolicySection.astro";
       <p>These are reviewed monthly and deleted from the trash one year after the inquiry is resolved. Monthly review may result in up to one additional month of retention.</p>
       <h3>Sync records</h3>
       <p>Sync request and change history and conflict records are retained for 90 days. Device sync records are retained for one year after the device’s last activity. Cleanup occurs during relevant sync or conflict processing, so records may remain until the next such event. Sync records linked to the account are deleted when the account is deleted.</p>
-      <p>Items cleaned up daily may remain for up to one additional day after their retention period. These periods apply to records controlled by Neurinlab and do not mean that Apple purchase records, files exported by users, or copies on other offline devices are deleted immediately.</p>
+      <p>Items cleaned up daily may remain for up to one additional day after their retention period.</p>
+      <p>These retention periods apply to records managed directly by Neurinlab and are separate from operational logs and infrastructure backups managed independently by external service providers.</p>
     </PolicySection>
 
     <PolicySection title="4. Account Deletion and Subscription Management">
