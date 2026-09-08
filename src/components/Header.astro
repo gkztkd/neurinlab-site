@@ -18,7 +18,12 @@ const currentPath = Astro.url.pathname;
 const switchHref = isEn
   ? currentPath.replace(/^\/en(?=\/|$)/, "") || "/"
   : `/en${currentPath}`;
-const switchLabel = isEn ? "KR" : "EN";
+const switchLabel = isEn ? "KO" : "EN";
+const supportHref = `${prefix}/leaf/support/`;
+const privacyHref = `${prefix}/leaf/privacy/`;
+const menuNote = isEn
+  ? "Slow questions become practical tools."
+  : "느린 질문에서 시작해, 실제 도구로 이어집니다.";
 ---
 
 <header class="site-header">
@@ -43,11 +48,17 @@ const switchLabel = isEn ? "KR" : "EN";
         {nav.map((item) => (
           <li>
             <a class="nav-link" href={item.href} aria-current={current === item.key ? "page" : undefined}>
-              {item.label}
+              <span>{item.label}</span>
+              <span class="nav-arrow" aria-hidden="true">↗</span>
             </a>
           </li>
         ))}
       </ul>
+      <div class="mobile-menu-meta">
+        <a href={supportHref}>{isEn ? "Leaf Support" : "Leaf 지원"}</a>
+        <a href={privacyHref}>{isEn ? "Privacy Policy" : "개인정보 처리방침"}</a>
+      </div>
+      <p class="mobile-menu-note">{menuNote}</p>
       <a class="language-link" href={switchHref}>{switchLabel}</a>
     </nav>
   </div>

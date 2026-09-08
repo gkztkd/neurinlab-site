@@ -2,60 +2,26 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout
-  title="느린랩"
-  description="느린랩은 AI 시대에 우리의 생각을 잃지 않기 위한 방법을 연구하고 실험합니다."
-  current="home"
->
-  <section class="home-hero">
-    <div class="section-inner home-hero-grid">
-      <div class="home-hero-copy">
-        <p class="eyebrow home-eyebrow">AI 시대의 생각과 언어를 위한 느린 실험</p>
-        <h1 class="home-title">
-          <span>AI 시대에</span>
-          <span>우리의 생각을</span>
-          <span>잃지 않기 위해</span>
-        </h1>
-        <p class="home-copy">
-          <span class="desktop-copy">
-            빠른 도구를 쓰면서도 스스로 생각하고,<br />
-            자기 언어로 정리하고, 더 깊게 표현하는 방법을 찾습니다.
-          </span>
-          <span class="mobile-copy">
-            빠른 도구를 쓰면서도<br />
-            스스로 생각하고, 자기 언어로 정리하고,<br />
-            더 깊게 표현하는 방법을 찾습니다.
-          </span>
-        </p>
-        <div class="actions home-actions">
-          <a class="button primary" href="/about/">느린랩 소개</a>
-          <a class="button" href="/leaf/">Leaf 살펴보기</a>
-        </div>
-        <p class="home-lower-note home-lower-note-desktop">느린 질문에서 시작해, 실제 도구로 이어집니다.</p>
-      </div>
-
-      <div class="home-image-placeholder" aria-label="홈 이미지 준비중">
-        <span class="placeholder-kicker">Image</span>
-        <strong>이미지 준비중</strong>
-        <span>마인드맵 비주얼 또는 앱 화면으로 교체 예정</span>
-      </div>
-      <p class="home-lower-note home-lower-note-mobile">느린 질문에서 시작해, 실제 도구로 이어집니다.</p>
+<BaseLayout title="느린랩" description="느린랩은 AI 시대에 우리의 생각을 잃지 않기 위한 방법을 연구하고 실험합니다." current="home">
+  <section class="editorial-hero home-editorial-hero">
+    <div class="wide-inner">
+      <p class="editorial-kicker">AI 시대의 생각과 언어를 위한 느린 실험</p>
+      <h1 class="editorial-title"><span class="desktop-headline"><span>AI 시대에 우리의 생각을</span><span>잃지 않기 위해</span></span><span class="mobile-headline"><span>AI 시대에</span><span>우리의 생각을</span><span>잃지 않기 위해</span></span></h1>
+      <p class="editorial-copy">빠른 도구를 쓰면서도 스스로 생각하고,<br />자기 언어로 정리하고, 더 깊게 표현하는 방법을 찾습니다.</p>
+      <a class="square-link" href="/about/">느린랩 소개 <span aria-hidden="true">↗</span></a>
     </div>
   </section>
-
-  <section class="home-problem">
-    <div class="section-inner home-problem-grid">
-      <h2 class="home-section-title">빠른 결과물 안에서<br />내 생각이 흐려질 때</h2>
-      <p class="home-section-copy">
-        AI는 더 빨리 쓰고, 더 빨리 만들고,<br class="mobile-only" />
-        더 빨리 정리하게 해줍니다.<br />
-        하지만 빠른 결과물 안에서<br class="mobile-only" />
-        내 생각이 흐려질 때가 있습니다.<br />
-        느린랩은 AI를 쓰면서도 자기 생각과<br class="mobile-only" />
-        자기 언어를<br class="desktop-only" /> 잃지 않는 방법을 묻습니다.
-      </p>
+  <figure class="campaign-art"><img src="/images/leaf/leaf-everywhere.png" alt="iPhone, iPad, Mac에서 이어지는 Leaf 사용 화면" /></figure>
+  <section class="leaf-intro-band">
+    <div class="wide-inner split-editorial-grid">
+      <p class="section-label">Leaf</p>
+      <div><h2>떠오른 생각을<br />실행 가능한 구조로.</h2><a class="text-link" href="/leaf/">Leaf 살펴보기 <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+  <section class="gradient-statement">
+    <div class="wide-inner split-editorial-grid">
+      <h2>빠른 결과물 안에서<br />내 생각이 흐려질 때</h2>
+      <p>AI는 더 빨리 쓰고, 더 빨리 만들고, 더 빨리 정리하게 해줍니다.<br />하지만 빠른 결과물 안에서 내 생각이 흐려질 때가 있습니다.<br />느린랩은 AI를 쓰면서도 자기 생각과 자기 언어를 잃지 않는 방법을 묻습니다.</p>
     </div>
   </section>
 </BaseLayout>
-
-

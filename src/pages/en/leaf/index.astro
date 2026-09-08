@@ -1,77 +1,12 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import AppMockups from "../../../components/AppMockups.astro";
 ---
 
-<BaseLayout
-  title="Leaf | Neurinlab"
-  description="Leaf is a lightweight thinking app for capturing ideas and turning them into projects, mind maps, notes, and tasks."
-  lang="en"
-  current="leaf"
->
-  <section class="section hero leaf-hero">
-    <div class="section-inner">
-      <p class="eyebrow">Leaf</p>
-      <h1 class="hero-title wide">Give passing thoughts a structure you can return to.</h1>
-      <p class="hero-copy compact">
-        Leaf helps you capture ideas quickly,<br />
-        organize them by project,<br />
-        and shape them into mind maps, notes, and tasks.
-      </p>
-      <img class="app-icon" src="/assets/app/leaf-icon.png" alt="Leaf app icon" />
-    </div>
-  </section>
-
-  <section class="leaf-band leaf-detail-band">
-    <div class="section-inner">
-      <div class="feature-intro">
-        <AppMockups
-          labels={[
-            { title: "Screenshot coming soon", sub: "Ideas" },
-            { title: "Screenshot coming soon", sub: "Mind map" },
-            { title: "Screenshot coming soon", sub: "Notes & tasks" }
-          ]}
-          note="Screenshots coming soon"
-        />
-        <div>
-          <p class="meta-label">Core Features</p>
-          <h2 class="feature-title">Catch ideas before they get scattered,<br />then expand them when you need more structure.</h2>
-          <p class="feature-copy">
-            An idea does not have to start as a finished sentence.
-            Leaf gives scattered thoughts a place to grow into something usable.
-          </p>
-          <p class="flow-copy">Capture what comes up, connect what belongs together, and turn it into a next step.</p>
-        </div>
-      </div>
-
-      <div class="card-grid">
-        <article class="info-card">
-          <h2>Projects</h2>
-          <p>Create a project for each topic and keep related ideas in one place.</p>
-        </article>
-        <article class="info-card">
-          <h2>Mind Maps</h2>
-          <p>Branch out from a single idea and see how your thoughts connect.</p>
-        </article>
-        <article class="info-card">
-          <h2>Notes & Tasks</h2>
-          <p>Add notes and tasks to each node so ideas can move toward action.</p>
-        </article>
-      </div>
-
-      <div class="meta-section">
-        <div>
-          <p class="meta-label">Platform</p>
-          <p class="meta-copy">Preparing for launch on iOS and macOS<br />Android and Windows support planned for a future release</p>
-        </div>
-        <div>
-          <p class="meta-label">App Pages</p>
-          <div class="inline-links">
-            <a href="/en/leaf/support/">Leaf Support</a>
-            <a href="/en/leaf/privacy/">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<BaseLayout title="Leaf | Neurinlab" description="Leaf is a thinking app for capturing ideas and turning them into projects, mind maps, notes, and tasks." lang="en" current="leaf">
+  <section class="editorial-hero leaf-page-hero"><div class="wide-inner"><p class="editorial-kicker">Leaf</p><h1 class="editorial-title"><span>Turn passing thoughts</span><span>into usable structure.</span></h1><p class="editorial-copy">Capture ideas quickly, organize them by project,<br />then shape them into mind maps, notes, and tasks.</p></div></section>
+  <figure class="campaign-art leaf-campaign-art"><img src="/images/leaf/leaf-everywhere.png" alt="Leaf running across iPhone, iPad, and Mac" /></figure>
+  <section class="leaf-statement"><div class="wide-inner split-editorial-grid"><p class="section-label">Core Features</p><div><h2>Catch ideas before they scatter,<br />then give them room to grow.</h2><p>An idea does not have to start as a finished sentence. Leaf gives scattered thoughts a place to grow into something useful.</p></div></div></section>
+  <section class="dark-principle"><div class="wide-inner"><p class="section-label">How Leaf Works</p><h2>Capture what comes up, connect what belongs,<br />and turn it into a next step.</h2></div></section>
+  <section class="features-section"><div class="wide-inner"><div class="feature-row"><span>01</span><h2>Projects</h2><p>Create a project for each topic and keep related ideas in one place.</p></div><div class="feature-row"><span>02</span><h2>Mind Maps</h2><p>Branch out from a single idea and see how your thoughts connect.</p></div><div class="feature-row"><span>03</span><h2>Notes & Tasks</h2><p>Add notes and tasks to each node so ideas can move toward action.</p></div></div></section>
+  <section class="leaf-meta-section"><div class="wide-inner leaf-meta-grid"><div><p class="section-label">Platforms</p><p>Preparing for launch on iPhone, iPad, and Mac<br />Android and Windows support planned</p></div><div><p class="section-label">App Pages</p><a class="text-link" href="/en/leaf/support/">Leaf Support ↗</a><a class="text-link" href="/en/leaf/privacy/">Privacy Policy ↗</a></div></div></section>
 </BaseLayout>

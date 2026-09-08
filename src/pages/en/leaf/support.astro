@@ -1,38 +1,9 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import PolicySection from "../../../components/PolicySection.astro";
 ---
 
-<BaseLayout
-  title="Leaf Support | Neurinlab"
-  description="Support for Leaf login, sync, subscriptions, bug reports, and feature suggestions."
-  lang="en"
-  current="leaf"
->
-  <section class="section hero">
-    <div class="section-inner">
-      <p class="eyebrow">Leaf Support</p>
-      <h1 class="hero-title wide">How can we help?</h1>
-      <p class="hero-copy compact">Help with login, sync, subscriptions, bug reports, and feature suggestions.</p>
-    </div>
-  </section>
-
-  <div class="policy-wrap">
-    <PolicySection title="Email">
-      <p>
-        For help with Leaf, contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.<br />
-        Please include your device model, OS version, Leaf app version,
-        and a brief description of the issue so we can look into it more quickly.
-      </p>
-    </PolicySection>
-    <PolicySection title="Support Topics">
-      <ul>
-        <li>Account login and email verification</li>
-        <li>Sync and backup issues</li>
-        <li>Subscription and payment questions</li>
-        <li>Bug reports</li>
-        <li>Feature suggestions</li>
-      </ul>
-    </PolicySection>
-  </div>
+<BaseLayout title="Leaf Support | Neurinlab" description="Support for Leaf login, sync, subscriptions, bug reports, and feature suggestions." lang="en" current="leaf">
+  <section class="editorial-hero support-hero"><div class="wide-inner"><p class="editorial-kicker">Leaf Support</p><h1 class="editorial-title">How can we help?</h1><p class="editorial-copy">Get help with login, sync, subscriptions, bug reports, and feature suggestions.</p></div></section>
+  <section class="support-gradient-band"><div class="wide-inner"><p>Support email</p><a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a><span>Include your device model, OS version, Leaf version, and a brief description of the issue.</span></div></section>
+  <section class="topic-section"><div class="wide-inner split-editorial-grid"><h2>Support topics</h2><ul class="topic-list"><li>Account login and email verification</li><li>Sync and backup issues</li><li>Subscription and payment questions</li><li>Bug reports and feature suggestions</li></ul></div></section>
 </BaseLayout>

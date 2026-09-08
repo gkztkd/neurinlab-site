@@ -3,55 +3,8 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PolicySection from "../../../components/PolicySection.astro";
 ---
 
-<BaseLayout
-  title="Leaf Privacy Policy | Neurinlab"
-  description="Leaf Privacy Policy, including information collection, use, third-party services, data deletion, and contact."
-  lang="en"
-  current="leaf"
->
-  <section class="section hero">
-    <div class="section-inner">
-      <p class="eyebrow">Privacy Policy</p>
-      <h1 class="hero-title wide">Leaf Privacy Policy</h1>
-      <p class="hero-copy compact">Last updated: June 17, 2026</p>
-    </div>
-  </section>
-
-  <div class="policy-wrap">
-    <PolicySection title="Overview">
-      <p>Leaf helps you capture ideas, organize projects, and create mind maps. This page explains what information Leaf collects and how that information is used.</p>
-    </PolicySection>
-    <PolicySection title="Information We Collect">
-      <ul>
-        <li>The email address used to create an account or log in</li>
-        <li>User account identifiers required for authentication and sync</li>
-        <li>Projects, ideas, and mind map nodes created in Leaf</li>
-        <li>Support inquiry content sent by email</li>
-      </ul>
-    </PolicySection>
-    <PolicySection title="How We Use Information">
-      <ul>
-        <li>Provide account login and email verification</li>
-        <li>Sync and back up Leaf data across devices</li>
-        <li>Restore data when the user logs in on another device</li>
-        <li>Respond to customer support inquiries</li>
-        <li>Maintain app stability and security</li>
-      </ul>
-    </PolicySection>
-    <PolicySection title="Third-Party Services">
-      <p>Leaf uses Supabase for authentication, database storage, and sync. Supabase processes account and app data only as needed to provide those features.</p>
-    </PolicySection>
-    <PolicySection title="Tracking and Advertising">
-      <p>Leaf does not use user data for third-party advertising or tracking.</p>
-    </PolicySection>
-    <PolicySection title="Data Deletion">
-      <p>
-        To request deletion of account data, contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.<br />
-        If account deletion is available in the app, you can also delete your account directly in Settings.
-      </p>
-    </PolicySection>
-    <PolicySection title="Contact">
-      <p>For privacy-related questions, contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.</p>
-    </PolicySection>
-  </div>
+<BaseLayout title="Leaf Privacy Policy | Neurinlab" description="Leaf Privacy Policy, including information collection, use, third-party services, data deletion, and contact." lang="en" current="leaf">
+  <section class="editorial-hero privacy-hero"><div class="wide-inner"><p class="editorial-kicker">Privacy Policy</p><h1 class="editorial-title">Leaf Privacy Policy</h1><p class="editorial-copy">Status: English update pending</p></div></section>
+  <section class="policy-warning"><div class="policy-inner"><strong>Review in progress</strong><p>The Korean draft contains the latest operational details. This English version will be aligned after the remaining retention and service-provider details are confirmed.</p></div></section>
+  <div class="policy-wrap"><p class="policy-intro">This page provides a provisional English overview of how Leaf handles personal information.</p><PolicySection title="Overview" open><p>Leaf helps you capture ideas, organize projects, and create mind maps. This page explains what information Leaf collects and how that information is used.</p></PolicySection><PolicySection title="Information We Collect"><ul><li>The email address used to create an account or log in</li><li>User account identifiers required for authentication and sync</li><li>Projects, ideas, mind maps, notes, and tasks created in Leaf</li><li>Subscription and transaction identifiers used to verify Leaf Plus</li><li>Support inquiry content sent by email</li></ul></PolicySection><PolicySection title="How We Use Information"><ul><li>Provide account login and email verification</li><li>Sync, back up, and restore Leaf data across devices</li><li>Verify subscriptions and restore purchases</li><li>Respond to support inquiries and maintain app security</li></ul></PolicySection><PolicySection title="Third-Party Services"><p>Leaf uses Supabase for authentication, database storage, and sync. Apple provides in-app purchases, subscription management, cancellations, and refunds.</p></PolicySection><PolicySection title="Data Deletion"><p>You can delete your account from Leaf settings after confirming your password. Deleting your Leaf account or the app does not automatically cancel an Apple subscription.</p></PolicySection><PolicySection title="Contact"><p>For privacy-related questions, contact <a href="mailto:dev@neurinlab.com">dev@neurinlab.com</a>.</p></PolicySection></div>
 </BaseLayout>
