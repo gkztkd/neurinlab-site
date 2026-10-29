@@ -8,7 +8,7 @@ import PolicySection from "../../../components/PolicySection.astro";
     <div class="wide-inner">
       <p class="editorial-kicker">Privacy Policy</p>
       <h1 class="editorial-title">Leaf Privacy Policy</h1>
-      <p class="editorial-copy">Effective September 9, 2026</p>
+      <p class="editorial-copy">Effective October 29, 2026</p>
     </div>
   </section>
 
@@ -18,6 +18,10 @@ import PolicySection from "../../../components/PolicySection.astro";
     <PolicySection title="1. Information We Process and Why" open>
       <h3>Account and user data</h3>
       <p>We process your email address and account identifier to create and authenticate your Leaf account. If you use sync, projects, ideas, mind maps, notes, tasks, and related change history are processed on our servers.</p>
+      <h3>Optional AI organization</h3>
+      <p>AI organization is used only when you sign in, consent to the data transfer, and choose to run it. Leaf sends the idea title and body through its server to OpenAI to create or revise a mind map. Revisions also include the previous source and relevant node text, connections, status, and edit-protection context.</p>
+      <p>Note/task bodies and account passwords are excluded from AI transfers. Personal information you write in the source or nodes may still be included. Free AI requests also require server processing, separately from Plus device synchronization.</p>
+      <p>You can withdraw AI data-transfer consent in Account settings to stop new AI transfers. Withdrawal does not reverse processing already started or immediately erase existing output or external provider records. Leaf processes the consent version and acceptance/withdrawal timestamps to verify consent.</p>
       <h3>Subscription and purchase information</h3>
       <p>To verify Leaf Plus access, restore purchases, and resolve errors, we use product and transaction identifiers, account-linking information, subscription status, and related processing timestamps. Payments are handled through Apple’s in-app purchase system. Neurinlab does not directly collect payment details such as card numbers.</p>
       <h3>Email and customer support</h3>
@@ -26,11 +30,18 @@ import PolicySection from "../../../components/PolicySection.astro";
 
     <PolicySection title="2. External Services">
       <p>Leaf uses Supabase for account authentication, data storage and synchronization, and subscription entitlement verification. Its primary database is located in the Seoul, Republic of Korea region. Apple iCloud Mail is used to send authentication and password-reset emails and to handle customer inquiries. Subscription payments are processed through Apple’s in-app purchase system.</p>
+      <p>Optional AI organization uses the OpenAI API. Section 1 explains the information transferred and its purpose; Section 3 explains related retention. The location of the primary database does not mean all processing by external services, including OpenAI, occurs only in the Republic of Korea.</p>
     </PolicySection>
 
     <PolicySection title="3. Retention and Deletion">
       <h3>Account-linked data</h3>
       <p>When account deletion is completed successfully, we delete user-created server data, sync history, Leaf entitlements, and account-specific recovery copies linked to that account.</p>
+      <h3>AI requests, results, and consent records</h3>
+      <p>For retry protection and monthly allowances, Leaf processes account/request identifiers, content hashes, outcome/error codes, timestamps, usage records, and generated output. Retry output expires 24 hours after request creation and is cleared hourly, allowing up to one additional hour.</p>
+      <p>After temporary output is cleared, deduplication and usage records, consent versions, and acceptance/withdrawal timestamps remain while the account is maintained. These account-linked service database records are removed when account deletion completes. Source text, maps, and revision checkpoints saved as app data are separate from temporary retry output and follow the account/user-data retention policy.</p>
+      <h3>OpenAI data processing</h3>
+      <p>Leaf disables response storage on its OpenAI API requests. OpenAI states that API data is not used for model training without opt-in. Disabling response storage does not guarantee zero retention: abuse-monitoring records may normally be kept for up to 30 days, subject to legal or safety exceptions. Provider-managed caches follow separate processing terms. See <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data controls</a> for details.</p>
+      <p>Deleting a Leaf account or withdrawing AI transfer consent does not guarantee immediate deletion of every OpenAI record.</p>
       <h3>Apple subscription notification records</h3>
       <p>These records are retained for 90 days from receipt and cleaned up daily. They may contain transaction identifiers and are managed separately from account deletion. The same retention period applies to Apple notifications received after account deletion.</p>
       <h3>Purchase error diagnostics</h3>
